@@ -44,16 +44,13 @@
       axios.post('https://api-demo.forgingblock.io/signin', formData, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-        //   'Origin': 'http://localhost:8080/' 
         }
       })
       .then(response => {
         // Handle success
         console.log('Login successful', response);
-        // You might want to handle the received cookie here
       })
       .catch(error => {
-        // Handle error
         console.error('Login error', error);
       });
     }
@@ -89,8 +86,6 @@
   .vue-password-strength-meter {
     max-width: 100%;
     background-color: none;
-
-    /* margin-bottom: 20px; */
   }
   .Password{
     max-width: 100%;
